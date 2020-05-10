@@ -6,6 +6,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import './router.css'
 
 import Home from '../views/home'
 import Check from '../views/check'
@@ -15,7 +16,7 @@ import NotFound from '../views/notFound'
 export default () => {
   return (
     <Router>
-      <ul>
+      <ul className="tab">
         <li>
           <Link to="/home">home</Link>
         </li>

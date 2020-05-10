@@ -1,0 +1,32 @@
+.table-wrap {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .table {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    background-color: #fff;
+
+    .index {
+      width: 15px;
+      height: 15px;
+      font-size: 10px;
+    }
+
+    .box {
+      height: 13px;
+      width: 13px;
+      margin: 0 2px 2px 0;
+    }
+    .light {
+      background-color: pink;
+    }
+  }
+}
