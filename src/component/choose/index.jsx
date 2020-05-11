@@ -12,7 +12,7 @@ export default (props) => {
     let now = format(Date.now(), 'yyyy-MM-dd')
     console.log('now', now)
     let res = (new Date(now).getTime() - new Date(dateString).getTime()) / 1000 / 60 / 60 / 24
-    props.setDate((res/7)+1)
+    props.setDate(res/7)
   }
   return (
     <div className="choose-wrap">

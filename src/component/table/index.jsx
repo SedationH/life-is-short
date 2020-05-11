@@ -10,7 +10,7 @@ export default (props) => {
   return (
     <div className="table-wrap">
       <div className="table-des">
-        你已经度过了{parseInt(date)-1}周
+          当前你已经度过了<span className="day">{parseInt(date)}</span>周
       </div>
       <div className="table">
         {
@@ -22,7 +22,7 @@ export default (props) => {
                 return (
                   <Fragment>
                     <span className="index">{(i / 52) + 1}</span>
-                    <div className="box"></div>
+                    <div className="box light"></div>
                   </Fragment>
                 )
               }

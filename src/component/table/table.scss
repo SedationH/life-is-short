@@ -1,5 +1,4 @@
 .table-wrap {
-  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -7,26 +6,42 @@
   flex-direction: column;
   justify-content: flex-start;
 
+  .table-des {
+    padding: 15px 0;
+
+    .day {
+      color: #F39C12;
+      font-size: 30px;
+      padding: 0 15px;
+    }
+  }
+
   .table {
-    width: 800px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 830px;
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 1;
-    background-color: #fff;
 
     .index {
       width: 15px;
       height: 15px;
       font-size: 10px;
+      padding-right: 5px;
+      text-align: center;
+      padding-right: 20px;
     }
 
     .box {
       height: 13px;
       width: 13px;
       margin: 0 2px 2px 0;
+      border-radius: 50%;
     }
+
     .light {
-      background-color: pink;
+      background-color:  rgba(255, 255, 255, 0.4);
     }
   }
 }

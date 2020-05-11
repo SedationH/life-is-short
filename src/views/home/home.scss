@@ -1,0 +1,40 @@
+.home-wrap {
+  .home-block {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .one {
+    background-image: url('../../assets/img/bg1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      position: relative;
+      background-color: hsla(0,0,100%,.2);
+      overflow: hidden;
+      font-size: 5rem;
+      transform: translateY(-50%);
+      border-radius: 20px;
+      padding: 40px;
+      color: #E74C3C;
+    }
+    .text::before {
+      content: '';
+      position: absolute;
+      top: 0;right: 0;bottom: 0;left: 0;
+      filter: blur(20px);
+      margin: -30px;
+    }
+  }
+
+  .two {
+    background-image: url('../../assets/img/bg2.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
