@@ -1,0 +1,27 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+
+  .section {
+    border: 1px solid red;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .pic {
+      padding-right: 20px;
+      img {
+        width: 20vw;
+      }
+    }
+  }
+}

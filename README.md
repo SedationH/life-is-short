@@ -21,9 +21,11 @@
 ## How to use
 
 1. dev
+
 yarn
 yarn start
 
 2. pro
+
 yarn add express
 node app.js
