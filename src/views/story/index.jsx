@@ -1,15 +1,45 @@
 import React from 'react'
-import pic1 from '../../assets/img/pic1.png'
-import pic2 from '../../assets/img/pic2.png'
-import pic3 from '../../assets/img/pic3.png'
-import pic4 from '../../assets/img/pic4.png'
+// import pic1 from '../../assets/img/pic1.png'
+// import pic2 from '../../assets/img/pic2.png'
+// import pic3 from '../../assets/img/pic3.png'
+// import pic4 from '../../assets/img/pic4.png'
 import './story.scss'
-
+import { Impress, Step } from 'react-impressjs';
 
 export default () => {
   return (
     <div className="story">
-      <div className="header">
+      <Impress fallbackMessage={<p>Sorry, your <b>device or browser</b> couldn't support well.</p>}>
+        <Step
+          data={{
+            x: 0,
+            y: -1500
+          }}
+        >
+          This is slide 2
+        </Step>
+        <Step
+          data={{
+            x: 1000,
+            y: -1500
+          }}
+        >
+          This is slide 3
+        </Step>
+        <Step
+          id={'overview'}
+          data={{
+            x:0,
+            y:0,
+            scale: 4
+          }} />
+      </Impress>
+    </div >
+  )
+}
+
+/*
+<div className="header">
         别说来日方长
       </div>
       <div className="section">
@@ -58,6 +88,4 @@ export default () => {
           <img src={pic4} alt="" />
         </div>
       </div>
-    </div>
-  )
-}
+*/

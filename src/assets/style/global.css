@@ -1,7 +1,8 @@
-html,body {
-  width: 100vw;
-}
-
 body {
   font-size: 16px;
+  background-color: pink;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
