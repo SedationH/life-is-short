@@ -11,6 +11,7 @@
     "express": "^4.17.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-aplayer": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-impressjs": "^1.1.0",
     "react-router-dom": "^5.1.2",
