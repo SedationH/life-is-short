@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from "react-router-dom";
 import './router.css'
@@ -16,7 +15,7 @@ import NotFound from '../views/notFound'
 export default () => {
   return (
     <Router>
-      <ul className="tab">
+      {/* <ul className="tab">
         <li>
           <Link to="/home">home</Link>
         </li>
@@ -26,7 +25,7 @@ export default () => {
         <li>
           <Link to="/story">story</Link>
         </li>
-      </ul>
+      </ul> */}
       <Switch>
         <Route exact path="/">
           <Redirect to="/home" />

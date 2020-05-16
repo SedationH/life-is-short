@@ -1,15 +1,17 @@
 import React from 'react'
 import './home.scss'
 import { useHistory } from "react-router-dom";
+import { Button } from 'antd';
 
 export default () => {
   let history = useHistory()
 
   function handleClick(e) {
     const t = e.target
-    if (t.className === 'check') {
+    console.log(t)
+    if (t.className.indexOf('check') !== -1) {
       history.push('/check')
-    }else if(t.className === 'story'){
+    } else if (t.className.indexOf('story') !== -1) {
       history.push('/story')
     }
   }
@@ -21,8 +23,12 @@ export default () => {
         </div>
       </div>
       <div className="home-block two" onClick={handleClick}>
-        <div className="check">小测试</div>
-        <div className="story">聊一聊</div>
+        <Button className="check" type="primary" block>
+          Check
+          </Button>
+        <Button className="story" type="primary" block>
+          Story
+        </Button>
       </div>
     </div>
   )

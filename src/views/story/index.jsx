@@ -9,8 +9,10 @@ import pic7 from '../../assets/img/pic7.png'
 import pic8 from '../../assets/img/pic8.png'
 import pic9 from '../../assets/img/pic9.png'
 import pic10 from '../../assets/img/pic10.png'
-import m1 from '../../assets/music/m1.flac'
-// import v1 from '../../assets/video/v1.mp4'
+import mpic from '../../assets/img/mpic.png'
+import m1 from '../../assets/music/m1.mp3'
+import { Button } from 'antd';
+import { useHistory } from "react-router-dom";
 
 import './story.scss'
 import { Impress, Step } from 'react-impressjs';
@@ -18,20 +20,30 @@ import { Impress, Step } from 'react-impressjs';
 import ReactAplayer from 'react-aplayer';
 
 const musciSetting = {
-  theme: '#F57F17',
-  lrcType: 3,
   mini: true,
   audio: [
     {
       url: m1,
-      theme: '#A9DFBF'
+      cover: mpic
     }
   ]
 };
 
+
 export default () => {
+  let history = useHistory()
+
+  function handleBack() {
+    history.push('/')
+    window.location.reload()
+  }
   return (
     <div className="story">
+      <div className="back">
+        <Button type="primary" block onClick={handleBack}>
+          返回
+        </Button>
+      </div>
       <ReactAplayer
         {...musciSetting}
       />
