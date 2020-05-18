@@ -167,7 +167,7 @@ export default () => {
             </li>
           </ul>
         </Step>
-        <Step className="end" data={{ x: 1350, scale: 10 }}>
+        <Step className="end" data={{ x: 1350,y:500, scale: 10 }}>
           EDN
         </Step>
       </Impress>
