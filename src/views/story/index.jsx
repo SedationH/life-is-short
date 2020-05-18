@@ -50,6 +50,11 @@ export default () => {
       <Impress fallbackMessage={<p>Sorry, your <b>device or browser</b> couldn't support well.</p>}>
         <Step className="title" data={{ x: 1350, y: -2000, rotateX: 180 }}>
           别说来日方长
+          <div className="notice">
+          (使用 -> or 空格浏览，左上角
+            <span role="img" aria-label="music">🎵</span>
+          点击播放)
+          </div>
         </Step>
         <Step className="intro" data={{ x: 1350, y: -1000 }}>
           <p> 你是否，也时常听到身边的人感叹
